@@ -187,7 +187,7 @@ class MirrorListener(listeners.MirrorListeners):
                     else:
                         buttons.buildbutton("🍂 ɪɴᴅᴇx ʟɪɴᴋ 🍂", share_url)
                         if VIEW_LINK:
-                            buttons.buildbutton(" View Link", share_urls)
+                            buttons.buildbutton("🌀 ᴠɪᴇᴡ ʟɪɴᴋ 🌀", share_urls)
             if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
                 buttons.buildbutton(f"{BUTTON_FOUR_NAME}", f"{BUTTON_FOUR_URL}")
             if BUTTON_FIVE_NAME is not None and BUTTON_FIVE_URL is not None:
