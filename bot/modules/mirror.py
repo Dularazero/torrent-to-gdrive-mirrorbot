@@ -153,10 +153,10 @@ class MirrorListener(listeners.MirrorListeners):
 
     def onUploadComplete(self, link: str, size, files, folders, typ):
         with download_dict_lock:
-            msg = f'<b>☞ 📂 Fɪʟᴇɴᴀᴍᴇ : </b><code>{download_dict[self.uid].name()}</code>\n<b>☞ 📦Size : </b><code>{size}</code>'
+            msg = f'<b>☞ 📁 ꜰɪʟᴇɴᴀᴍᴇ : </b><code>{download_dict[self.uid].name()}</code>\n<b>☞ 📦 ꜱɪᴢᴇ  : </b><code>{size}</code>'
             if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
-                msg += '\n<b>☞ 🌀 Tʏᴘᴇ : </b><code>Folder</code>'
-                msg += f'\n<b>☞ ☢ Pᴏᴡᴇʀᴇᴅ Bʏ : @WhatsappGang</b>'
+                msg += '\n<b>☞ 🌀 ᴛʏᴘᴇ : </b><code>Folder</code>'
+                msg += f'\n<b>☞ ☢ ᴘᴏᴡᴇʀᴇᴅ Bʏ : @WhatsappGang</b>'
             else:
                 msg += f'\n<b>☞ ☢ Pᴏᴡᴇʀᴇᴅ Bʏ : @WhatsappGang</b>'
             buttons = button_build.ButtonMaker()
