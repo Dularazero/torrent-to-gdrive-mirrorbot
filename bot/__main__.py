@@ -33,15 +33,15 @@ def stats(update, context):
     disk = psutil.disk_usage('/').percent
     stats = f'<b>╭──「⭕️ BOT STATISTICS ⭕️」</b>\n' \
             f'<b>│</b>\n' \
-            f'<b>├  ⏰ Bot Uptime : {currentTime}</b>\n' \
-            f'<b>├  💾 Total Disk Space : {total}</b>\n' \
-            f'<b>├  📀 Total Used Space : {used}</b>\n' \
-            f'<b>├  💿 Total Free Space : {free}</b>\n' \
-            f'<b>├  🔼 Total Upload : {sent}</b>\n' \
-            f'<b>├  🔽 Total Download : {recv}</b>\n' \
-            f'<b>├  🖥️ CPU : {cpuUsage}%</b>\n' \
-            f'<b>├  🎮 RAM : {memory}%</b>\n' \
-            f'<b>├  💽 DISK : {disk}%</b>\n' \
+            f'<b>├  ⏰ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ : {currentTime}</b>\n' \
+            f'<b>├  💾 ᴛᴏᴛᴀʟ ᴅɪsᴋ sᴘᴀᴄᴇ : {total}</b>\n' \
+            f'<b>├  📀 ᴛᴏᴛᴀʟ ᴜsᴇᴅ sᴘᴀᴄᴇ : {used}</b>\n' \
+            f'<b>├  💿 ᴛᴏᴛᴀʟ ғʀᴇᴇ sᴘᴀᴄᴇ : {free}</b>\n' \
+            f'<b>├  🔼 ᴛᴏᴛᴀʟ ᴜᴘʟᴏᴀᴅ : {sent}</b>\n' \
+            f'<b>├  🔽 ᴛᴏᴛᴀʟ ᴅᴏᴡɴʟᴏᴀᴅ : {recv}</b>\n' \
+            f'<b>├  🖥️ ᴄᴘᴜ : {cpuUsage}%</b>\n' \
+            f'<b>├  🎮 ʀᴀᴍ : {memory}%</b>\n' \
+            f'<b>├  💽 ᴅɪsᴋ : {disk}%</b>\n' \
             f'<b>│</b>\n' \
             f'<b>╰──「 🚸 @MPMSTUDIO 🚸 」</b>'
     update.effective_message.reply_photo(IMAGE_URL, stats, parse_mode=ParseMode.HTML)
@@ -53,8 +53,8 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/ayushteke/slam_aria_mirror_bot")
-    buttons.buildbutton("Channel", "https://t.me/AT_BOTs")
+    buttons.buildbutton("Discussion ✨", "https://t.me/WHATSAPPAGANG")
+    buttons.buildbutton("Channel 💞", "https://t.me/MPMSTUDIO")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
