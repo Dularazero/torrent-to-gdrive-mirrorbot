@@ -21,7 +21,7 @@ page = """
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torrent File Selector</title>
-    <link rel="icon" href="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg" type="image/jpg">
+    <link rel="icon" href="https://telegra.ph/file/39b6f09f0ba7f11878000.jpg" type="image/jpg">
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
@@ -193,20 +193,20 @@ input[type="submit"]:hover, input[type="submit"]:focus{
 </style>
 </head>
 <body>
-  <!--© Designed and coded by @bipuldey19-Telegram-->
+  <!--© Designed and coded by @Zer_0XD-Telegram-->
     <header>
       <div class="brand">
         <img
-          src="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg"
+          src="https://telegra.ph/file/39b6f09f0ba7f11878000.jpg"
           alt="logo"
         />
         <a href="https://t.me/AT_BOTs"> 
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+          <h2 class="name">MPMs Luffy mirrorbot</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/AT_BOTs"><i class="fab fa-telegram"></i></a>
+        <a href="https://t.me/MPMSTUDIO"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/WhatsappGang"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -326,7 +326,7 @@ code_page = """
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torrent Code Checker</title>
-    <link rel="icon" href="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg" type="image/jpg"> 
+    <link rel="icon" href="https://telegra.ph/file/39b6f09f0ba7f11878000.jpg" type="image/jpg"> 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -518,20 +518,20 @@ section span{
     </style>
   </head>
 <body>
-   <!--© Designed and coded by @bipuldey19-Telegram-->
+   <!--© Designed and coded by @Zer_0XD-Telegram-->
     <header>
       <div class="brand">
         <img
-          src="https://telegra.ph/file/4defcc13ea6cf6e69a202.jpg"
+          src="https://telegra.ph/file/39b6f09f0ba7f11878000.jpg"
           alt="logo"
         />
-        <a href="https://t.me/AT_BOTs">
-          <h2 class="name">AT_BOTs slam mirrorbot</h2>
+        <a href="https://t.me/WhatsappGang">
+          <h2 class="name">MPMs Luffy mirrorbot</h2>
         </a>
       </div>
       <div class="social">
-        <a href="https://github.com/ayushteke/Torrent_2_Gdrive_mirrorbot"><i class="fab fa-github"></i></a>
-        <a href="https://t.me/AT_BOTs"><i class="fab fa-telegram"></i></a>
+        <a href="https://t.me/MPMSTUDIO"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/WhatsappGang"><i class="fab fa-telegram"></i></a>
       </div>
     </header>
     <section>
@@ -714,11 +714,11 @@ async def e404_middleware(app, handler):
         try:
             response = await handler(request)
             if response.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>Luffy X MPM</h3>", content_type="text/html")
             return response
         except web.HTTPException as ex:
             if ex.status == 404:
-                return web.Response(text="<h1>404: Page not found</h2><br><h3>AT_BOTs slam mirrorbot</h3>", content_type="text/html")
+                return web.Response(text="<h1>404: Page not found</h2><br><h3>Luffy X MPM</h3>", content_type="text/html")
             raise
     return middleware_handler
 
